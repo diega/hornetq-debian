@@ -1,0 +1,17 @@
+Source: hornetq
+Section: net
+Priority: optional
+Maintainer: Diego López León <diegoll@itcrowdarg.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.jboss.org/hornetq/
+Vcs-Git: git://github.com/diega/hornetq-debian.git
+Vcs-Browser: https://github.com/diega/hornetq-debian
+
+Package: hornetq
+Architecture: all
+Depends: java-runtime (>= 1.5)
+Description: It's a project to build a messaging system
+ HornetQ is an open source project to build a multi-protocol, embeddable,
+ very high performance, clustered, asynchronous messaging system.
+ HornetQ is an example of Message Oriented Middleware (MoM)
