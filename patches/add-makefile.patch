@@ -1,14 +1,12 @@
 Add Makefile for simpler installation
 --- /dev/null
 +++ b/Makefile
-@@ -0,0 +1,10 @@
+@@ -0,0 +1,8 @@
 +all:
 +
 +install:
 +	install -D -m755 bin/run.sh $(DESTDIR)/usr/bin/hornetq-run
 +	install -D -m755 bin/stop.sh $(DESTDIR)/usr/bin/hornetq-stop
 +	mkdir -p $(DESTDIR)/usr/share/hornetq
-+	cp -r lib/* $(DESTDIR)/usr/share/hornetq
-+	cp -r schemas/* $(DESTDIR)/usr/share/hornetq
-+	mkdir -p $(DESTDIR)/etc/hornetq/stand-alone
-+	cp -r config/stand-alone/non-clustered/* $(DESTDIR)/etc/hornetq/stand-alone
++	cp -r lib/ $(DESTDIR)/usr/share/hornetq/
++	cp -r schemas/ $(DESTDIR)/usr/share/hornetq/
