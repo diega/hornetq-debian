@@ -1,7 +1,7 @@
 Add Makefile for simpler installation
 --- /dev/null
 +++ b/Makefile
-@@ -0,0 +1,8 @@
+@@ -0,0 +1,10 @@
 +all:
 +
 +install:
@@ -10,3 +10,5 @@ Add Makefile for simpler installation
 +	mkdir -p $(DESTDIR)/usr/share/hornetq
 +	cp -r lib/ $(DESTDIR)/usr/share/hornetq/
 +	cp -r schemas/ $(DESTDIR)/usr/share/hornetq/
++	mkdir -p $(DESTDIR)/etc/hornetq
++	cp -r config/stand-alone $(DESTDIR)/etc/hornetq/
