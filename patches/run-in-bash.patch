@@ -1,0 +1,9 @@
+make the executable to be run as a bash script instead of a generic /bin/sh
+--- a/bin/run.sh
++++ b/bin/run.sh
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ 
+ # By default, the server is started in the non-clustered standalone configuration
+ CONFIG_DIR="$1"

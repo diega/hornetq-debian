@@ -1,3 +1,4 @@
 hornetq-paths.patch
 add-makefile.patch
 add-remote-jmx-flags.patch
+run-in-bash.patch
